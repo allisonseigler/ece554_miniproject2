@@ -36,7 +36,7 @@ module tpumac_tb();
       $display("ERROR: values not reset\n");
       error+=1;
     end
-    for (integer i=0; i<56; i = i+1) begin
+    for (integer i=0; i<256; i = i+1) begin
       @(negedge clk);
       Ain = $random;
       Bin = $random << 8;
